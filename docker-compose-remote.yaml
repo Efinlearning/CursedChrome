@@ -15,7 +15,7 @@ services:
   cursedchrome:
     image: "s045pd/cursed_chrome:latest"
     volumes:
-      - ./cassl:/work/cassl
+      - cursedchrome-web:/work/cassl
     depends_on:
       - db
       - redis
